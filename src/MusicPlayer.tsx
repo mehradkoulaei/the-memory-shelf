@@ -18,6 +18,13 @@ export default function MusicPlayer() {
   
   const [audioStream, setAudioStream] = useState<MediaStream | null>(null);
   const audioCtxRef = useRef<AudioContext | null>(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const initAudioStream = () => {
     if (audioCtxRef.current || !audioRef.current) return;
@@ -158,7 +165,7 @@ export default function MusicPlayer() {
         stream={audioStream}
         colorVariant="sunset" 
         theme="dark"
-        type="default"
+        type={isMobile ? "mobile" : "default"}
       >
         <div className="music-player">
           <audio 
