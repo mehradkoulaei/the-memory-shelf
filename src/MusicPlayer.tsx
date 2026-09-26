@@ -57,12 +57,16 @@ export default function MusicPlayer() {
         audio.play().then(() => {
           setIsPlaying(true);
           window.removeEventListener('pointerdown', handleInteraction, true);
+          window.removeEventListener('touchstart', handleInteraction, true);
+          window.removeEventListener('click', handleInteraction, true);
           window.removeEventListener('keydown', handleInteraction, true);
         }).catch(e => console.warn('Autoplay failed:', e));
       }
     };
 
     window.addEventListener('pointerdown', handleInteraction, true);
+    window.addEventListener('touchstart', handleInteraction, true);
+    window.addEventListener('click', handleInteraction, true);
     window.addEventListener('keydown', handleInteraction, true);
 
     // Try immediate
@@ -71,12 +75,16 @@ export default function MusicPlayer() {
         setIsPlaying(true);
         initAudioStream();
         window.removeEventListener('pointerdown', handleInteraction, true);
+          window.removeEventListener('touchstart', handleInteraction, true);
+          window.removeEventListener('click', handleInteraction, true);
         window.removeEventListener('keydown', handleInteraction, true);
       }).catch(() => {});
     }
 
     return () => {
       window.removeEventListener('pointerdown', handleInteraction, true);
+          window.removeEventListener('touchstart', handleInteraction, true);
+          window.removeEventListener('click', handleInteraction, true);
       window.removeEventListener('keydown', handleInteraction, true);
     };
   }, []);
@@ -173,7 +181,7 @@ export default function MusicPlayer() {
             ref={audioRef} 
             src={TRACKS[currentTrackIndex].src} 
             preload="metadata"
-            crossOrigin="anonymous"
+            
           />
           <div className="player-info">
             <span className="track-title">{TRACKS[currentTrackIndex].title}</span>
