@@ -1,0 +1,105 @@
+.music-player-wrapper {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  z-index: 1000;
+}
+
+.music-player {
+  direction: rtl;
+  background: rgba(20, 20, 20, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 12px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  min-width: 260px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  transition: opacity 0.3s ease;
+}
+
+.player-info {
+  width: 100%;
+  text-align: center;
+}
+
+.track-title {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 100%;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.player-controls {
+  display: flex;
+  direction: ltr;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.ctrl-btn {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 50%;
+  transition: color 0.2s, background 0.2s;
+}
+
+.ctrl-btn:hover {
+  color: #fff;
+}
+
+.play-btn {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px;
+}
+
+.play-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.progress-bar {
+  direction: ltr;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #9e1c2f;
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .music-player-wrapper {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+  }
+  .music-player {
+    min-width: 0;
+  }
+}
