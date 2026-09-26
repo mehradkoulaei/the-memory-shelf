@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Video Test</title>
+</head>
+<body>
+  <video id="vid1" src="/photos/my girl videos/1.MOV" controls autoplay muted style="border: 1px solid red; max-width: 45%;"></video>
+  <video id="vid2" src="/photos/my girl videos/2.MOV" controls autoplay muted style="border: 1px solid blue; max-width: 45%;"></video>
+  <script>
+    document.querySelectorAll('video').forEach(v => {
+      v.onloadedmetadata = () => {
+        console.log(v.src, v.videoWidth, v.videoHeight);
+        const div = document.createElement('div');
+        div.innerText = \`\${v.src.split('/').pop()}: \${v.videoWidth}x\${v.videoHeight}\`;
+        document.body.appendChild(div);
+      };
+    });
+  </script>
+</body>
+</html>

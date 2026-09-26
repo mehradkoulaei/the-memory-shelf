@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <video src="/photos/my girl videos/1.MOV" autoplay muted loop playsinline controls style="width: 300px; height: 300px;"></video>
+  <div id="log"></div>
+  <script>
+    const v = document.querySelector("video");
+    v.onerror = e => {
+      document.getElementById("log").innerText += " ERROR: " + v.error.code + " (" + v.error.message + ")";
+    };
+    v.onplaying = () => {
+      document.getElementById("log").innerText += " PLAYING";
+    };
+  </script>
+</body>
+</html>

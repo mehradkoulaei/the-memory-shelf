@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    img { max-width: 200px; max-height: 200px; border: 1px solid red; margin: 5px; }
+  </style>
+</head>
+<body>
+  <div id="imgs"></div>
+  <script>
+    const files = [
+      'photo_2026-09-21_11-10-15.webp',
+      'photo_2026-09-21_11-10-20.webp',
+      'photo_2026-09-21_12-04-33.webp',
+      'photo_2026-09-21_12-04-34.webp',
+      'photo_2026-09-21_12-04-36.webp',
+      'photo_2026-09-21_12-04-37.webp',
+      'photo_2026-09-21_12-04-39.webp',
+      'photo_2026-09-21_12-04-41.webp'
+    ];
+    const c = document.getElementById('imgs');
+    files.forEach(f => {
+      const img = new Image();
+      img.src = "/photos/baran's childhood/" + f;
+      c.appendChild(img);
+    });
+  </script>
+</body>
+</html>
