@@ -123,41 +123,42 @@ export default function MusicPlayer() {
       setProgress((audio.currentTime / audio.duration) * 100 || 0);
     };
     const handleEnded = () => handleNext();
+    const handlePlay = () => setIsPlaying(true);
+    const handlePause = () => setIsPlaying(false);
 
     audio.addEventListener('timeupdate', handleTimeUpdate);
     audio.addEventListener('ended', handleEnded);
+    audio.addEventListener('play', handlePlay);
+    audio.addEventListener('pause', handlePause);
 
     return () => {
       audio.removeEventListener('timeupdate', handleTimeUpdate);
       audio.removeEventListener('ended', handleEnded);
+      audio.removeEventListener('play', handlePlay);
+      audio.removeEventListener('pause', handlePause);
     };
   }, [currentTrackIndex]);
 
   useEffect(() => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        if (audioCtxRef.current?.state === 'suspended') {
-          audioCtxRef.current.resume();
-        }
-        audioRef.current.play().catch(() => setIsPlaying(false));
-      } else {
-        audioRef.current.pause();
+    if (audioRef.current && isPlaying) {
+      if (audioCtxRef.current?.state === 'suspended') {
+        audioCtxRef.current.resume();
       }
+      audioRef.current.play().catch(() => setIsPlaying(false));
     }
-  }, [currentTrackIndex, isPlaying]);
+  }, [currentTrackIndex]);
 
   const togglePlay = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (audioRef.current) {
-      if (isPlaying) {
+      if (!audioRef.current.paused) {
         audioRef.current.pause();
-        setIsPlaying(false);
       } else {
         initAudio();
         if (audioCtxRef.current?.state === 'suspended') {
           audioCtxRef.current.resume();
         }
-        audioRef.current.play().then(() => setIsPlaying(true)).catch(() => {});
+        audioRef.current.play().catch(() => {});
       }
     }
   };
