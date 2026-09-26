@@ -3,11 +3,11 @@ import { VoiceBeam } from 'voice-glow';
 import './MusicPlayer.css';
 
 const TRACKS = [
-  { title: 'Eyelahenazz', src: '/music/@eyelahenazz.mp3' },
-  { title: 'Fogholade', src: '/music/Behzad Leito Ft Sijal Ft Sami Beigi - Fogholade.mp3' },
-  { title: 'Farda (Remix)', src: '/music/Behzad-Leito-Farda-(Ft-Laleh-Live-Tomorrow-Remix)-256.mp3' },
-  { title: 'Hamisheh Ghayeb', src: '/music/Hamisheh Ghayeb   Dariush.mp3' },
-  { title: 'Veridis Quo', src: '/music/Veridis Quo - Daft Punk.mp3' },
+  { title: 'Eyelahenazz', src: import.meta.env.BASE_URL + 'music/@eyelahenazz.mp3' },
+  { title: 'Fogholade', src: import.meta.env.BASE_URL + 'music/Behzad Leito Ft Sijal Ft Sami Beigi - Fogholade.mp3' },
+  { title: 'Farda (Remix)', src: import.meta.env.BASE_URL + 'music/Behzad-Leito-Farda-(Ft-Laleh-Live-Tomorrow-Remix)-256.mp3' },
+  { title: 'Hamisheh Ghayeb', src: import.meta.env.BASE_URL + 'music/Hamisheh Ghayeb   Dariush.mp3' },
+  { title: 'Veridis Quo', src: import.meta.env.BASE_URL + 'music/Veridis Quo - Daft Punk.mp3' },
 ];
 
 export default function MusicPlayer() {
