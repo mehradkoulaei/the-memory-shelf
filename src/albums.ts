@@ -6,174 +6,174 @@ export const BARAN_ALBUMS = [
     "media": [
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_11-10-15.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_11-10-15.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_11-10-20.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_11-10-20.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-04-33.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-04-33.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-04-34.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-04-34.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-04-36.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-04-36.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-04-37.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-04-37.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-04-39.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-04-39.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-04-41.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-04-41.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-04-43.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-04-43.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-04-45.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-04-45.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-04-47.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-04-47.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-04-48.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-04-48.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-04-50.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-04-50.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-04-52.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-04-52.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-04-55.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-04-55.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-04-57.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-04-57.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-04-58.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-04-58.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-00.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-00.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-01.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-01.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-03.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-03.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-05.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-05.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-07.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-07.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-09.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-09.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-11.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-11.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-13.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-13.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-15.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-15.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-16.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-16.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-18.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-18.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-20.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-20.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-21.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-21.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-24.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-24.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-25.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-25.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-27.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-27.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-53.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-53.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-54.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-54.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-56.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-56.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-57.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-57.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-05-59.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-05-59.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-06-00.jpg"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-06-00.jpg"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-06-02.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-06-02.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/baran's childhood/photo_2026-09-21_12-06-03.webp"
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_12-06-03.webp"
       },
       {
-        "src": "/photos/baran's childhood/photo_2026-09-27_00-16-09.jpg",
+        "src": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-27_00-16-09.jpg",
         "type": "photo"
       }
     ],
-    "coverSrc": "/photos/baran's childhood/photo_2026-09-21_11-10-15.webp",
+    "coverSrc": import.meta.env.BASE_URL + "photos/baran's childhood/photo_2026-09-21_11-10-15.webp",
     "roman": "1",
     "discipline": "Love",
     "note": "Our precious memories together.",
@@ -215,57 +215,57 @@ export const BARAN_ALBUMS = [
     "media": [
       {
         "type": "photo",
-        "src": "/photos/esfahan/photo_2026-09-21_11-55-07.webp"
+        "src": import.meta.env.BASE_URL + "photos/esfahan/photo_2026-09-21_11-55-07.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/esfahan/photo_2026-09-21_11-55-08.webp"
+        "src": import.meta.env.BASE_URL + "photos/esfahan/photo_2026-09-21_11-55-08.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/esfahan/photo_2026-09-21_11-55-10.webp"
+        "src": import.meta.env.BASE_URL + "photos/esfahan/photo_2026-09-21_11-55-10.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/esfahan/photo_2026-09-21_11-55-11.webp"
+        "src": import.meta.env.BASE_URL + "photos/esfahan/photo_2026-09-21_11-55-11.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/esfahan/photo_2026-09-21_11-55-17.webp"
+        "src": import.meta.env.BASE_URL + "photos/esfahan/photo_2026-09-21_11-55-17.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/esfahan/photo_2026-09-21_11-58-41.webp"
+        "src": import.meta.env.BASE_URL + "photos/esfahan/photo_2026-09-21_11-58-41.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/esfahan/photo_2026-09-21_11-59-21.webp"
+        "src": import.meta.env.BASE_URL + "photos/esfahan/photo_2026-09-21_11-59-21.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/esfahan/photo_2026-09-21_11-59-22.webp"
+        "src": import.meta.env.BASE_URL + "photos/esfahan/photo_2026-09-21_11-59-22.webp"
       },
       {
         "type": "video",
-        "src": "/photos/esfahan/IMG_5070.MOV",
+        "src": import.meta.env.BASE_URL + "photos/esfahan/IMG_5070.MOV",
         "poster": ""
       },
       {
         "type": "video",
-        "src": "/photos/esfahan/IMG_5090.MOV",
+        "src": import.meta.env.BASE_URL + "photos/esfahan/IMG_5090.MOV",
         "poster": ""
       },
       {
         "type": "video",
-        "src": "/photos/esfahan/IMG_5094.MOV",
+        "src": import.meta.env.BASE_URL + "photos/esfahan/IMG_5094.MOV",
         "poster": ""
       },
       {
-        "src": "/photos/esfahan/photo_2026-09-27_00-15-45.jpg",
+        "src": import.meta.env.BASE_URL + "photos/esfahan/photo_2026-09-27_00-15-45.jpg",
         "type": "photo"
       }
     ],
-    "coverSrc": "/photos/esfahan/photo_2026-09-21_11-55-07.webp",
+    "coverSrc": import.meta.env.BASE_URL + "photos/esfahan/photo_2026-09-21_11-55-07.webp",
     "roman": "2",
     "discipline": "Love",
     "note": "Our precious memories together.",
@@ -307,59 +307,59 @@ export const BARAN_ALBUMS = [
     "media": [
       {
         "type": "photo",
-        "src": "/photos/first time we met/photo_2026-09-21_11-04-17.webp"
+        "src": import.meta.env.BASE_URL + "photos/first time we met/photo_2026-09-21_11-04-17.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/first time we met/photo_2026-09-21_11-04-25.webp"
+        "src": import.meta.env.BASE_URL + "photos/first time we met/photo_2026-09-21_11-04-25.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/first time we met/photo_2026-09-21_11-04-27.webp"
+        "src": import.meta.env.BASE_URL + "photos/first time we met/photo_2026-09-21_11-04-27.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/first time we met/photo_2026-09-21_11-04-37.webp"
+        "src": import.meta.env.BASE_URL + "photos/first time we met/photo_2026-09-21_11-04-37.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/first time we met/photo_2026-09-21_11-04-47.webp"
+        "src": import.meta.env.BASE_URL + "photos/first time we met/photo_2026-09-21_11-04-47.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/first time we met/photo_2026-09-21_11-04-52.webp"
+        "src": import.meta.env.BASE_URL + "photos/first time we met/photo_2026-09-21_11-04-52.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/first time we met/photo_2026-09-21_11-04-57.webp"
+        "src": import.meta.env.BASE_URL + "photos/first time we met/photo_2026-09-21_11-04-57.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/first time we met/photo_2026-09-21_11-05-14.webp"
+        "src": import.meta.env.BASE_URL + "photos/first time we met/photo_2026-09-21_11-05-14.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/first time we met/photo_2026-09-21_11-07-35.webp"
+        "src": import.meta.env.BASE_URL + "photos/first time we met/photo_2026-09-21_11-07-35.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/first time we met/photo_2026-09-21_11-07-47.webp"
+        "src": import.meta.env.BASE_URL + "photos/first time we met/photo_2026-09-21_11-07-47.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/first time we met/photo_2026-09-21_11-07-50.webp"
+        "src": import.meta.env.BASE_URL + "photos/first time we met/photo_2026-09-21_11-07-50.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/first time we met/photo_2026-09-21_11-08-11.webp"
+        "src": import.meta.env.BASE_URL + "photos/first time we met/photo_2026-09-21_11-08-11.webp"
       },
       {
         "type": "video",
-        "src": "/photos/first time we met/IMG_7372.MOV",
+        "src": import.meta.env.BASE_URL + "photos/first time we met/IMG_7372.MOV",
         "poster": ""
       }
     ],
-    "coverSrc": "/photos/first time we met/photo_2026-09-21_11-07-47.webp",
+    "coverSrc": import.meta.env.BASE_URL + "photos/first time we met/photo_2026-09-21_11-07-47.webp",
     "roman": "3",
     "discipline": "Love",
     "note": "Our precious memories together.",
@@ -401,30 +401,30 @@ export const BARAN_ALBUMS = [
     "media": [
       {
         "type": "photo",
-        "src": "/photos/last time we met/image (8).webp"
+        "src": import.meta.env.BASE_URL + "photos/last time we met/image (8).webp"
       },
       {
         "type": "photo",
-        "src": "/photos/last time we met/photo_2026-09-25_09-41-06.webp"
+        "src": import.meta.env.BASE_URL + "photos/last time we met/photo_2026-09-25_09-41-06.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/last time we met/photo_2026-09-25_09-41-18.webp"
+        "src": import.meta.env.BASE_URL + "photos/last time we met/photo_2026-09-25_09-41-18.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/last time we met/photo_2026-09-25_09-43-15.webp"
+        "src": import.meta.env.BASE_URL + "photos/last time we met/photo_2026-09-25_09-43-15.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/last time we met/photo_2026-09-25_09-43-28.webp"
+        "src": import.meta.env.BASE_URL + "photos/last time we met/photo_2026-09-25_09-43-28.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/last time we met/photo_2026-09-25_09-43-42.webp"
+        "src": import.meta.env.BASE_URL + "photos/last time we met/photo_2026-09-25_09-43-42.webp"
       }
     ],
-    "coverSrc": "/photos/last time we met/photo_2026-09-25_09-43-28.webp",
+    "coverSrc": import.meta.env.BASE_URL + "photos/last time we met/photo_2026-09-25_09-43-28.webp",
     "roman": "4",
     "discipline": "Love",
     "note": "Our precious memories together.",
@@ -466,130 +466,130 @@ export const BARAN_ALBUMS = [
     "media": [
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_11-09-16.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_11-09-16.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_11-09-18.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_11-09-18.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_11-09-20.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_11-09-20.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_11-10-06.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_11-10-06.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_11-15-10.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_11-15-10.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_11-15-13.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_11-15-13.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-04-10.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-04-10.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-09.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-09.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-10.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-10.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-12.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-12.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-15.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-15.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-20.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-20.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-22.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-22.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-23.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-23.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-25.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-25.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-26.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-26.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-27.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-27.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-30.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-30.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-31.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-31.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-33.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-33.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-34.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-34.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-35.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-35.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-37.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-37.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-39.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-39.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-06-41.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-06-41.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-07-27.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-07-27.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-07-28.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-07-28.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-07-30.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-07-30.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-07-31.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-07-31.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-07-33.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-07-33.webp"
       },
       {
         "type": "photo",
-        "src": "/photos/mehrad's childhood/photo_2026-09-21_12-07-34.webp"
+        "src": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_12-07-34.webp"
       }
     ],
-    "coverSrc": "/photos/mehrad's childhood/photo_2026-09-21_11-09-16.webp",
+    "coverSrc": import.meta.env.BASE_URL + "photos/mehrad's childhood/photo_2026-09-21_11-09-16.webp",
     "roman": "5",
     "discipline": "Love",
     "note": "Our precious memories together.",
@@ -630,37 +630,37 @@ export const BARAN_ALBUMS = [
     "subtitle": "خاطرات ما",
     "media": [
       {
-        "src": "/photos/my girl videos/IMG_3232.MOV",
+        "src": import.meta.env.BASE_URL + "photos/my girl videos/IMG_3232.MOV",
         "type": "video"
       },
       {
         "type": "video",
-        "src": "/photos/my girl videos/1.MOV",
+        "src": import.meta.env.BASE_URL + "photos/my girl videos/1.MOV",
         "poster": ""
       },
       {
         "type": "video",
-        "src": "/photos/my girl videos/2.MOV",
+        "src": import.meta.env.BASE_URL + "photos/my girl videos/2.MOV",
         "poster": ""
       },
       {
         "type": "video",
-        "src": "/photos/my girl videos/3.MOV",
+        "src": import.meta.env.BASE_URL + "photos/my girl videos/3.MOV",
         "poster": ""
       },
       {
         "type": "video",
-        "src": "/photos/my girl videos/4.MOV",
+        "src": import.meta.env.BASE_URL + "photos/my girl videos/4.MOV",
         "poster": ""
       },
       {
         "type": "video",
-        "src": "/photos/my girl videos/5.MOV",
+        "src": import.meta.env.BASE_URL + "photos/my girl videos/5.MOV",
         "poster": ""
       },
       {
         "type": "video",
-        "src": "/photos/my girl videos/6.MOV",
+        "src": import.meta.env.BASE_URL + "photos/my girl videos/6.MOV",
         "poster": ""
       }
     ],
@@ -706,34 +706,34 @@ export const BARAN_ALBUMS = [
     "media": [
       {
         "type": "photo",
-        "src": "/photos/your favorite photo's/photo_2026-09-25_16-15-34.jpg"
+        "src": import.meta.env.BASE_URL + "photos/your favorite photo's/photo_2026-09-25_16-15-34.jpg"
       },
       {
         "type": "photo",
-        "src": "/photos/your favorite photo's/photo_2026-09-25_16-15-38.jpg"
+        "src": import.meta.env.BASE_URL + "photos/your favorite photo's/photo_2026-09-25_16-15-38.jpg"
       },
       {
         "type": "photo",
-        "src": "/photos/your favorite photo's/photo_2026-09-25_16-15-42.jpg"
+        "src": import.meta.env.BASE_URL + "photos/your favorite photo's/photo_2026-09-25_16-15-42.jpg"
       },
       {
         "type": "photo",
-        "src": "/photos/your favorite photo's/photo_2026-09-25_16-15-46.jpg"
+        "src": import.meta.env.BASE_URL + "photos/your favorite photo's/photo_2026-09-25_16-15-46.jpg"
       },
       {
         "type": "photo",
-        "src": "/photos/your favorite photo's/photo_2026-09-25_16-15-49.jpg"
+        "src": import.meta.env.BASE_URL + "photos/your favorite photo's/photo_2026-09-25_16-15-49.jpg"
       },
       {
         "type": "photo",
-        "src": "/photos/your favorite photo's/photo_2026-09-25_16-15-52.jpg"
+        "src": import.meta.env.BASE_URL + "photos/your favorite photo's/photo_2026-09-25_16-15-52.jpg"
       },
       {
         "type": "photo",
-        "src": "/photos/your favorite photo's/photo_2026-09-25_16-15-56.jpg"
+        "src": import.meta.env.BASE_URL + "photos/your favorite photo's/photo_2026-09-25_16-15-56.jpg"
       }
     ],
-    "coverSrc": "/photos/your favorite photo's/photo_2026-09-25_16-15-34.jpg",
+    "coverSrc": import.meta.env.BASE_URL + "photos/your favorite photo's/photo_2026-09-25_16-15-34.jpg",
     "roman": "7",
     "discipline": "Love",
     "note": "Our precious memories together.",
@@ -778,30 +778,30 @@ export const BARAN_ALBUMS = [
     "media": [
       {
         "type": "photo",
-        "src": "/photos/my favorite photo's/photo_2026-09-25_16-17-10.jpg"
+        "src": import.meta.env.BASE_URL + "photos/my favorite photo's/photo_2026-09-25_16-17-10.jpg"
       },
       {
         "type": "photo",
-        "src": "/photos/my favorite photo's/photo_2026-09-25_16-17-18.jpg"
+        "src": import.meta.env.BASE_URL + "photos/my favorite photo's/photo_2026-09-25_16-17-18.jpg"
       },
       {
         "type": "photo",
-        "src": "/photos/my favorite photo's/photo_2026-09-25_16-17-25.jpg"
+        "src": import.meta.env.BASE_URL + "photos/my favorite photo's/photo_2026-09-25_16-17-25.jpg"
       },
       {
         "type": "photo",
-        "src": "/photos/my favorite photo's/photo_2026-09-25_16-17-45.jpg"
+        "src": import.meta.env.BASE_URL + "photos/my favorite photo's/photo_2026-09-25_16-17-45.jpg"
       },
       {
         "type": "photo",
-        "src": "/photos/my favorite photo's/photo_2026-09-25_16-17-54.jpg"
+        "src": import.meta.env.BASE_URL + "photos/my favorite photo's/photo_2026-09-25_16-17-54.jpg"
       },
       {
-        "src": "/photos/my favorite photo's/video.mp4",
+        "src": import.meta.env.BASE_URL + "photos/my favorite photo's/video.mp4",
         "type": "video"
       }
     ],
-    "coverSrc": "/photos/my favorite photo's/photo_2026-09-25_16-17-10.jpg",
+    "coverSrc": import.meta.env.BASE_URL + "photos/my favorite photo's/photo_2026-09-25_16-17-10.jpg",
     "roman": "VIII",
     "discipline": "Love",
     "note": "Our precious memories together.",
