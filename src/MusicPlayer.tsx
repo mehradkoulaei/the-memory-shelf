@@ -197,6 +197,7 @@ export default function MusicPlayer() {
           <audio 
             autoPlay
             playsInline
+            crossOrigin="anonymous"
             ref={audioRef} 
             src={TRACKS[currentTrackIndex].src} 
             preload="metadata"
