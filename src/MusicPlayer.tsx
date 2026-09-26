@@ -14,10 +14,13 @@ export default function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const [progress, setProgress] = useState(0);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
   
-  const [audioStream, setAudioStream] = useState<MediaStream | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioCtxRef = useRef<AudioContext | null>(null);
+  const analyserRef = useRef<AnalyserNode | null>(null);
+  const dataArrayRef = useRef<Uint8Array | null>(null);
+  const meterRef = useRef<number>(0);
+  const reqRef = useRef<number>(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
@@ -26,31 +29,54 @@ export default function MusicPlayer() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const initAudioStream = () => {
+  const initAudio = () => {
     if (audioCtxRef.current || !audioRef.current) return;
     try {
       const AudioContext = window.AudioContext || (window as any).webkitAudioContext;
       const ctx = new AudioContext();
+      const analyser = ctx.createAnalyser();
+      analyser.fftSize = 256;
       
       const source = ctx.createMediaElementSource(audioRef.current);
-      const dest = ctx.createMediaStreamDestination();
+      source.connect(analyser);
+      analyser.connect(ctx.destination);
       
-      source.connect(ctx.destination);
-      source.connect(dest);
-      
-      setAudioStream(dest.stream);
       audioCtxRef.current = ctx;
+      analyserRef.current = analyser;
+      dataArrayRef.current = new Uint8Array(analyser.frequencyBinCount);
+      
+      updateMeter();
     } catch (e) {
-      console.error('Failed to init Web Audio stream', e);
+      console.error('Failed to init Web Audio', e);
     }
   };
 
-  // Autoplay Logic
+  const updateMeter = () => {
+    if (analyserRef.current && dataArrayRef.current && audioRef.current && !audioRef.current.paused) {
+      analyserRef.current.getByteFrequencyData(dataArrayRef.current as any);
+      let sum = 0;
+      const length = Math.floor(dataArrayRef.current.length * 0.5); 
+      for (let i = 0; i < length; i++) {
+        sum += dataArrayRef.current[i];
+      }
+      const avg = sum / length;
+      
+      let level = avg / 255;
+      level = Math.pow(level, 1.5);
+      level = Math.min(1, level * 1.5); 
+      
+      meterRef.current = level;
+    } else {
+      meterRef.current = Math.max(0, meterRef.current - 0.1);
+    }
+    reqRef.current = requestAnimationFrame(updateMeter);
+  };
+
   useEffect(() => {
     const handleInteraction = () => {
       const audio = audioRef.current;
       if (audio && audio.paused) {
-        initAudioStream();
+        initAudio();
         if (audioCtxRef.current?.state === 'suspended') {
           audioCtxRef.current.resume();
         }
@@ -69,23 +95,23 @@ export default function MusicPlayer() {
     window.addEventListener('click', handleInteraction, true);
     window.addEventListener('keydown', handleInteraction, true);
 
-    // Try immediate
     if (audioRef.current) {
       audioRef.current.play().then(() => {
         setIsPlaying(true);
-        initAudioStream();
+        initAudio();
         window.removeEventListener('pointerdown', handleInteraction, true);
-          window.removeEventListener('touchstart', handleInteraction, true);
-          window.removeEventListener('click', handleInteraction, true);
+        window.removeEventListener('touchstart', handleInteraction, true);
+        window.removeEventListener('click', handleInteraction, true);
         window.removeEventListener('keydown', handleInteraction, true);
       }).catch(() => {});
     }
 
     return () => {
       window.removeEventListener('pointerdown', handleInteraction, true);
-          window.removeEventListener('touchstart', handleInteraction, true);
-          window.removeEventListener('click', handleInteraction, true);
+      window.removeEventListener('touchstart', handleInteraction, true);
+      window.removeEventListener('click', handleInteraction, true);
       window.removeEventListener('keydown', handleInteraction, true);
+      cancelAnimationFrame(reqRef.current);
     };
   }, []);
 
@@ -96,10 +122,7 @@ export default function MusicPlayer() {
     const handleTimeUpdate = () => {
       setProgress((audio.currentTime / audio.duration) * 100 || 0);
     };
-
-    const handleEnded = () => {
-      handleNext();
-    };
+    const handleEnded = () => handleNext();
 
     audio.addEventListener('timeupdate', handleTimeUpdate);
     audio.addEventListener('ended', handleEnded);
@@ -116,10 +139,7 @@ export default function MusicPlayer() {
         if (audioCtxRef.current?.state === 'suspended') {
           audioCtxRef.current.resume();
         }
-        audioRef.current.play().catch((err) => {
-          console.error('Playback prevented:', err);
-          setIsPlaying(false);
-        });
+        audioRef.current.play().catch(() => setIsPlaying(false));
       } else {
         audioRef.current.pause();
       }
@@ -133,13 +153,11 @@ export default function MusicPlayer() {
         audioRef.current.pause();
         setIsPlaying(false);
       } else {
-        initAudioStream();
+        initAudio();
         if (audioCtxRef.current?.state === 'suspended') {
           audioCtxRef.current.resume();
         }
-        audioRef.current.play().then(() => {
-          setIsPlaying(true);
-        }).catch(() => {});
+        audioRef.current.play().then(() => setIsPlaying(true)).catch(() => {});
       }
     }
   };
@@ -170,7 +188,7 @@ export default function MusicPlayer() {
   return (
     <div className="music-player-wrapper">
       <VoiceBeam 
-        stream={audioStream}
+        level={() => meterRef.current}
         colorVariant="sunset" 
         theme="dark"
         type={isMobile ? "mobile" : "default"}
@@ -178,10 +196,10 @@ export default function MusicPlayer() {
         <div className="music-player">
           <audio 
             autoPlay
+            playsInline
             ref={audioRef} 
             src={TRACKS[currentTrackIndex].src} 
             preload="metadata"
-            
           />
           <div className="player-info">
             <span className="track-title">{TRACKS[currentTrackIndex].title}</span>
